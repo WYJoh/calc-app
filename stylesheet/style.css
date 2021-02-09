@@ -1,0 +1,90 @@
+body {
+    background-color: darkslategray;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #EEBB77;
+    font-size: 70px;
+    margin-left: 30px;
+}
+.h1Dark {
+    color: #EEBB77;
+}
+.h1Light {
+    color: white;
+}
+
+.mathQuestion {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    border-color: white;
+    border-radius: 5em;
+    border-style: solid;
+    border-width: 2px;
+    padding: 15px;
+}
+
+input {
+    font-size: 25px;
+    width: 100px;
+    padding: 10px;
+}
+select {
+    background-color: #774433;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+button {
+    background-color: #774433;
+    color: white;
+    font-size: 25px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px;
+}
+.bubbleOne {
+    position: relative;
+    left: 390px;
+    color: white;
+    font-size: 45px;
+    margin: auto;
+}
+.bubbleTwo {
+    position: relative;
+    left: 350px;
+    color: white;
+    font-size: 35px;
+    margin: auto;
+}
+.bubbleThree {
+    position: relative;
+    left: 315px;
+    color: white;
+    font-size: 25px;
+    margin: auto;
+}
+img.dogCartoon {
+    width: 300px;
+}
+.mathAnswer {
+    position: relative;
+    top: -200px;
+    font-family: 'Montserrat', sans-serif;
+    color: #EEBB77;
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    overflow-wrap: break-word;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 70px;
+}

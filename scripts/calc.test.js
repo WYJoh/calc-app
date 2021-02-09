@@ -1,27 +1,32 @@
 const {test, expect} = require("@jest/globals");
-const Calculator = require("./calc.js");
+import { Calculator } from "./calc.js";
+
+let calc;
+
+beforeAll(() => {
+    calc = new Calculator();
+});
+
+afterAll(() => {
+    calc = null;
+});
 
 test("can add 1 + 2?", () => {
     let calc = new Calculator;
     expect(calc.add(1,2)).toBe(3);
 });
 
-test("can't add nulls", () => {
+test("can subtract 1 from 2?", () => {
     let calc = new Calculator;
-    expect(calc.add(null,null)).toBe(0);
+    expect(calc.subtract(2,1)).toBe(1);
 });
 
-test("can subtract 10 from 20?", () => {
+test("can multiply 10 by 20?", () => {
     let calc = new Calculator;
-    expect(calc.subtract(20,10)).toBe(10);
+    expect(calc.multiply(10,20)).toBe(200);
 });
 
-test("can multiply 10 by 10?", () => {
+test("can divide 20 by 10?", () => {
     let calc = new Calculator;
-    expect(calc.multiply(10,10)).toBe(100);
-});
-
-test("can divide 10 by 2?", () => {
-    let calc = new Calculator;
-    expect(calc.divide(10,2)).toBe(5);
+    expect(calc.divide(20,10)).toBe(2);
 });
